@@ -1,5 +1,5 @@
 {
-  "name": "@fc24/etcHosts",
+  "name": "etc-hosts",
   "version": "0.0.1",
   "devDependencies": {
     "chai": "1.10.0",
@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "event-stream": "^3.3.0",
+    "lodash": "^3.5.0",
     "through2": "^0.6.3"
   }
 }
