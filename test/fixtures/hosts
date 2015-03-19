@@ -1,0 +1,19 @@
+##
+# Host Database
+#
+# localhost is used to configure the loopback interface
+# when the system is booting.  Do not change this entry.
+##
+
+
+#141.0.20.188 www.finanzchefpro.de
+
+127.0.0.1	localhost 
+192.168.33.10 	finanzchef24.local fc24.local dev.finanzchefpro.de cms-b2c.finanzchef24.local
+192.168.178.129 jenkins.finanzchef24.de api.finanzchef24.de
+255.255.255.255	broadcasthost
+::1             localhost 
+fe80::1%lo0	localhost
+
+
+192.168.33.2 registry.docker.fc24 npm.fc24 bower.fc24 

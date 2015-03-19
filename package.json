@@ -1,0 +1,36 @@
+{
+  "name": "@fc24/etcHosts",
+  "version": "0.0.1",
+  "devDependencies": {
+    "chai": "1.10.0",
+    "chai-as-promised": "4.1.1",
+    "eslint": "0.8.2",
+    "eslint-plugin-mocha": "0.2.0",
+    "gulp": "^3.8.11",
+    "gulp-eslint": "^0.4.2",
+    "gulp-istanbul": "^0.6.0",
+    "gulp-jscs": "^1.4.0",
+    "gulp-jshint": "^1.9.2",
+    "gulp-mocha": "^2.0.0",
+    "istanbul": "0.3.2",
+    "jscs": "1.6.2",
+    "mocha": "1.21.4",
+    "run-sequence": "^1.0.2"
+  },
+  "scripts": {
+    "start": "node ./",
+    "test": "NODE_ENV=test istanbul test _mocha -- -R spec --recursive test",
+    "lint": "jscs . --reporter console && eslint .",
+    "jscs-checkstyle": "jscs . --reporter checkstyle > build/checkstyle-jscs.xml",
+    "eslint-checkstyle": "eslint . --format checkstyle > build/checkstyle-eslint.xml",
+    "coverage": "npm run test --coverage && npm run coverage-text",
+    "coverage-text": "istanbul report text",
+    "coverage-html": "istanbul report html",
+    "coverage-cobertura": "istanbul report cobertura",
+    "coverage-check": "istanbul check-coverage --statement 100 --branch 100 --function 100 --lines 100"
+  },
+  "dependencies": {
+    "event-stream": "^3.3.0",
+    "through2": "^0.6.3"
+  }
+}

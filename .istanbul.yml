@@ -1,0 +1,16 @@
+instrumentation:
+  root: .
+  default-excludes: true
+  excludes: ['.idea/**', 'build/**', 'config/**']
+  embed-source: false
+  complete-copy: false
+reporting:
+  print: summary
+  reports:
+    - lcov
+  dir: ./build/coverage
+  watermarks:
+    statements: [95, 100]
+    lines: [95, 100]
+    functions: [95, 100]
+    branches: [95, 100]
