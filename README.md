@@ -5,7 +5,7 @@ Common usecase is to autosetup some hostnames in situations a DNS does not fit.
 
 
 ```js
-var etcHosts = requir('etc-hosts');
+var etcHosts = require('etc-hosts');
 var hosts = [{ip:'192.168.33.2',names:['dev.box']}];
 etcHosts.write(hosts);
 ```
